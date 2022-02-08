@@ -1,4 +1,5 @@
 $size: 34px;
+$font-size: $size - 10px;
 
 body {
     font: 14px 'Century Gothic', Futura, sans-serif;
@@ -24,7 +25,7 @@ ul {
     background: #fff;
     border: 1px solid #999;
     float: left;
-    font-size: 24px;
+    font-size: $font-size;
     font-weight: bold;
     line-height: $size;
     height: $size;

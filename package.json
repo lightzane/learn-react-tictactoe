@@ -1,7 +1,7 @@
 {
-    "name": "learn-webpack-mini",
+    "name": "learn-react-tictactoe",
     "version": "1.0.0",
-    "description": "Webpack using Typescript as entry point with LESS plugins and configurations",
+    "description": "Learning React while building a Tic Tac Toe game with storing a history of moves.",
     "scripts": {
         "start": "webpack-dev-server --mode=development --devtool=eval-source-map",
         "build": "webpack --mode=production"

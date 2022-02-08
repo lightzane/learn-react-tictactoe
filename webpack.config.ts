@@ -20,7 +20,7 @@ const config: Configuration = {
     entry: ['./src/App.tsx', './src/style.scss'],
     output: {
         filename: '[name]-[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
     },
     // ! REQUIRED if main.ts imports from other files (to prevent MODULE_NOT_FOUND error)
     resolve: {

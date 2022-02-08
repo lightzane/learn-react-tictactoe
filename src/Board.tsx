@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import Square from './Square';
 
-export default class Board extends Component {
+interface BoardProps {
+    squares: string[];
+    onClick: any;
+}
+
+export default class Board extends Component<BoardProps> {
+
     renderSquare(i: number) {
-        return <Square />;
+        return <Square value={this.props.squares[i]} onClick={() => this.props.onClick(i)} />;
     }
 
     render() {
-        const status = 'Next player: X';
-
         return (
             <div>
-                <div className="status">{status}</div>
                 <div className="board-row">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}

@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Square extends Component {
-    render() {
-        return (
-            <button className="square">
-                {/* TODO */}
-            </button>
-        );
-    }
+interface SquareProps {
+    value: string;
+    onClick: any;
+}
+
+// * Change to "Function Component"
+export default function Square(props: SquareProps) {
+    return (
+        <button className="square" onClick={() => props.onClick()} >
+            {props.value}
+        </button >
+    );
 }
